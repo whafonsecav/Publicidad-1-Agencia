@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Global Network - Organigrama</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="brand-container">
+            <div class="brand-main">AXIS GLOBAL NETWORK</div>
+            <div class="brand-sub">Mariana Silva & William Fonseca | Publicidad 1 | Presencial | Martes | Noche | Bogotá
+            </div>
+        </div>
+        <div class="controls">
+            <button id="btnExpandAll" class="btn">Expandir Todo</button>
+            <button id="btnCollapseAll" class="btn">Agrupar Todo</button>
+            <div style="width:1px; background:#ddd; margin:0 10px;"></div>
+            <button id="btnZoomOut" class="btn"><i class="fas fa-minus"></i></button>
+            <button id="btnZoomReset" class="btn primary">100%</button>
+            <button id="btnZoomIn" class="btn"><i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="workspace">
+        <div id="viewport" class="viewport">
+            <!-- Canvas -->
+            <div id="canvas" class="canvas">
+                <div id="orgRoot" class="tree"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-card">
+            <div class="m-header">
+                <div id="modalTitle" class="m-title">Title</div>
+                <div id="modalMeta" class="m-meta">Subtitle</div>
+            </div>
+            <div id="modalDesc" class="m-body">
+                Description text...
+            </div>
+            <div class="m-footer">
+                <button id="modalClose" class="btn">Cerrar</button>
+                <button id="modalOk" class="btn primary" style="margin-left:8px;">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
